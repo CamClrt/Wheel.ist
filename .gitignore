@@ -2,3 +2,4 @@
 UNKNOWN.egg-info/
 .coverage
 htmlcov
+migrations
