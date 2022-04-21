@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from tables2_tutorial.views import PersonListView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include("home.urls"), ),
+    path('people/', PersonListView.as_view())
 ]

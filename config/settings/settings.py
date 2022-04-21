@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
     'products.apps.ProductsConfig',
+    "django_tables2",
+    "tables2_tutorial.apps.Tables2TutorialConfig",
 ]
 
 MIDDLEWARE = [
