@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from tables2_tutorial.views import PersonListView
+from products.views import ProductHTMxTableView
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include("home.urls"), ),
-    path('people/', PersonListView.as_view())
+    path('people/', PersonListView.as_view()),
+    path('products/', ProductHTMxTableView.as_view()),
 ]
